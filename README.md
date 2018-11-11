@@ -17,9 +17,10 @@ Installation Steps
 1. Build the project
 2. Execute the below query -
 
-CREATE TABLE EMPLOYEE 
-   (EMP_ID NUMBER, 
-	EMP_NAME VARCHAR2(2000 BYTE)
- );
+CREATE TABLE EMPLOYEE
+   (	EMP_ID NUMBER NOT NULL ENABLE, 
+	EMP_NAME VARCHAR2(2000 BYTE), 
+	 CONSTRAINT EMPLOYEE_PK PRIMARY KEY (EMP_ID)
+   );
 
  3. Update db.properties file
